@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="inicio">
         <h1>Contactanos</h1>
         <nav>
             <ul>
@@ -19,18 +19,19 @@
                 <li> <a href="./tours.html" class="boton-transicion">Tours</a></li>
                 <li> <a href="./discografia.html" class="boton-transicion">Discografia</a></li>
             </ul>
+            <a href="#pie" class="botonRedes">Redes sociales de Lana del Rey </a>
         </nav>
     </header>
 
     <main class="fondo">
         <section class="fotosbio">
-            <img src="../img/lanabio1.jpg" alt="Lana del rey">
+            <img src="../img/lanabio7.jpg" alt="Lana del rey">
             <img src="../img/lanabio2.jpg" alt="Lana del rey">
             <img src="../img/lanabio6.jpg" alt="Lana del rey">
             <img src="../img/lanabio4.jpg" alt="Lana del rey">
             <img src="../img/lanabio5.jpg" alt="Lana del rey">
             <img src="../img/lanabio3.jpg" alt="Lana del rey">
-            <img src="../img/lanabio7.jpg" alt="Lana del rey">
+            
         </section>
 
         <section class="contacto">
@@ -39,11 +40,16 @@
                     <label for="nombre">Nombre</label>
                     <input type="text" name="nombre" id="nombre">
                 </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido">
+                </div>
 
                 <h3>¿De donde nos estas leyendo?</h3>
 
                 <div>
                     <select name="" id=""> Continente
+                        <option value="...">...</option>
                         <option value="America del norte">America del Norte</option>
                         <option value="America Central">America central</option>
                         <option value="America del Sur">America del sur</option>
@@ -67,7 +73,9 @@
                 </div>
 
                 <div>
-                    <h2>Dejanos tus comentario para que podamos seguir creciendo y mejorando!</h2>
+                    <h2>Dejanos tus comentario para que podamos seguir creciendo y mejorando! <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-through-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l3.103-3.104a.5.5 0 1 1 .708.708L4.5 12.207V14a.5.5 0 0 1-.146.354l-1.5 1.5ZM16 3.5a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182A23.825 23.825 0 0 1 5.8 12.323L8.31 9.81a1.5 1.5 0 0 0-2.122-2.122L3.657 10.22a8.827 8.827 0 0 1-1.039-1.57c-.798-1.576-.775-2.997-.213-4.093C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3Z"/>
+                    </svg></h2>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
 
@@ -76,9 +84,17 @@
 
             </form>
         </section>
+        
     </main>
-
-    <footer>
+    <div class="spoti">
+        <a href="https://open.spotify.com/artist/00FQb4jTyendYWaN8pK0wa?si=G6YYhW10TDKsKIPV84b4Iw" target="_blank"><img
+                src="../img/Spotify.png" alt="spoti"></a>
+    </div>
+    <a href="#inicio"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-file-arrow-up" viewBox="0 0 16 16" >
+        <path d="M8 11a.5.5 0 0 0 .5-.5V6.707l1.146 1.147a.5.5 0 0 0 .708-.708l-2-2a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L7.5 6.707V10.5a.5.5 0 0 0 .5.5z"/>
+        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+    </svg></a>
+    <footer id="pie">
         <div>
             <p>Segui a Lana del Rey en sus redes sociales, activa las notificaciones, y mantene al tanto de todo lo que
                 publica.</p>

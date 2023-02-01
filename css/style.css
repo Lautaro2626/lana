@@ -15,7 +15,7 @@ body {
 /*header*/
 header {
     width: 100%;
-    height: 700px;
+    height: 720px;
     background-image: url(../img/fondo.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -23,8 +23,10 @@ header {
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-
+    justify-content: space-around;
+    align-items: center;
 }
+
 
 header h1 {
     color: rgb(124, 84, 205);
@@ -35,6 +37,7 @@ header h1 {
     transition-duration: 3s;
 }
 
+
 header h1:hover {
     color: rgb(139, 106, 205);
     transform: scale(1.17);
@@ -44,24 +47,28 @@ header h2 {
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 38px;
-}
+    margin: 5px;
 
-header nav ul {
-    list-style: none;
-    text-align: center;
 }
-
+.dropdown-menu{
+    background-color: rgba(86, 76, 152, 0.783);;
+}
+.dropdown-item{
+color: white;
+font-weight: bold;
+}
 header nav ul li {
     display: inline-block;
     margin: 0px 50px 5px 0px;
     transition-property: all;
     transition-duration: 0.5s;
 }
+
 header nav ul li:hover {
     transform: scale(1.1);
 }
 
-.boton-transicion{
+.boton-transicion {
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
@@ -74,7 +81,7 @@ header nav ul li:hover {
     transition-duration: 0.1s;
 }
 
-.boton-transicion:hover{
+.boton-transicion:hover {
     background-color: rgb(86, 76, 152);
     box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
     -webkit-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
@@ -88,7 +95,7 @@ header nav ul li:hover {
     text-decoration: none;
     font-size: 30px;
     color: white;
-    margin: 10px 0px 70px 0px;
+    margin: 60px 0px 70px 0px;
     background: rgb(11, 1, 24);
     background: linear-gradient(90deg, rgba(11, 1, 24, 1) 0%, rgba(37, 25, 74, 1) 21%, rgba(125, 102, 159, 0.8240010997067448) 50%, rgba(37, 25, 74, 1) 81%, rgba(11, 1, 24, 1) 100%);
     transition: 1s;
@@ -96,13 +103,13 @@ header nav ul li:hover {
 
 .botonRedes:hover {
     transform: scale(1.1);
+    color: white;
     background: rgb(11, 1, 24);
     background: linear-gradient(90deg, rgba(11, 1, 24, 1) 0%, rgba(37, 25, 74, 1) 21%, rgba(125, 102, 159, 0.8240010997067448) 50%, rgba(37, 25, 74, 1) 81%, rgba(11, 1, 24, 1) 100%);
     box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
     -webkit-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
     -moz-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
 }
-
 
 /*MAIN*/
 /*inicio*/
@@ -351,16 +358,25 @@ header nav ul li:hover {
     text-align: center;
     margin: 10px;
 }
-.carrusel{
+
+.carrusel {
     width: 80%;
-    margin: 20px 120px;  
-}
-.carrusel div img{
-    height: 550px;
-    object-fit: cover;    
+    margin: 20px 120px;
 }
 
-.tour{
+.carrusel div img {
+    height: 550px;
+    object-fit: cover;
+}
+.carrusel div p{
+    font-size: 15px;
+    background-color: rgba(22, 4, 47, 0.482);
+}
+.carrusel div h4{
+    font-size: 30px;
+    background-color: rgba(22, 4, 47, 0.482);
+}
+.tour {
     margin: 30px 10px 70px 10px;
     border: 3px solid darkslateblue;
 }
@@ -423,14 +439,14 @@ header nav ul li:hover {
 .impo h2 {
     text-align: center;
     color: white;
-    font-size: 45px;
+    font-size: 30px;
     background: linear-gradient(90deg, rgba(11, 1, 24, 1) 0%, rgba(37, 25, 74, 1) 21%, rgba(125, 102, 159, 0.8240010997067448) 50%, rgba(37, 25, 74, 1) 81%, rgba(11, 1, 24, 1) 100%);
 }
 
 .impo h3 {
     text-align: center;
     color: white;
-    font-size: 40px;
+    font-size: 27px;
     background: rgb(11, 1, 24);
     background: linear-gradient(90deg, rgba(11, 1, 24, 1) 0%, rgba(37, 25, 74, 1) 21%, rgba(125, 102, 159, 0.8240010997067448) 50%, rgba(37, 25, 74, 1) 81%, rgba(11, 1, 24, 1) 100%);
     margin: 10px;
@@ -508,7 +524,7 @@ header nav ul li:hover {
 
 .bio p {
     font-size: 22px;
-    text-align: center;
+    text-align:justify;
     margin: 40px;
 }
 
@@ -519,9 +535,9 @@ header nav ul li:hover {
 /*tour*/
 
 .fotostour p {
-    text-align: center;
+    text-align: justify ;
     font-size: 25px;
-    width: 65%;
+    width: 80%;
     margin: 0px 0px 20px 0px;
 }
 
@@ -529,7 +545,7 @@ header nav ul li:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 10px;
+    margin: 0px;
 }
 
 .fotostour h2 {
@@ -808,6 +824,12 @@ footer div {
         font-size: 30px;
     }
 
+    header nav ul li {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 100px;
+    }
+
     .info {
         width: 100%;
         height: 1100px;
@@ -922,13 +944,27 @@ footer div {
         width: 150px;
         margin: 5px;
     }
+
+    .carrusel {
+        width: 60%;
+        margin: 20px 120px;
+    }
+
+    .carrusel div img {
+        height: 500px;
+        object-fit: cover;
+    }
 }
 
 @media screen and (max-width: 650px) {
 
     .info {
         width: 100%;
-        height: 1800px;
+        height: 1600px;
+    }
+
+    .info p {
+        font-size: 23px;
     }
 
     .info-fotos {
@@ -951,11 +987,6 @@ footer div {
         height: 352px;
     }
 
-    header nav ul li {
-        display: flex;
-        flex-direction: column;
-        margin: 30px 100px;
-    }
 
     .videos {
         display: flex;
@@ -965,9 +996,15 @@ footer div {
     .discos iframe {
         width: 85%
     }
+
 }
 
 @media screen and (max-width: 550px) {
+    .fotosbio {
+        height: 350px;
+        margin: 0px 0px;
+    }
+
     .borngrid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
@@ -975,7 +1012,11 @@ footer div {
             "grid-img1 grid-video"
             "grid-img4 grid-img4";
     }
-
+    .bio p {
+        font-size: 20px;
+        text-align: justify;
+        margin: 20px;
+    }
     .grid-img1 {
         grid-area: grid-img1;
         grid-row-start: 1;
@@ -1016,9 +1057,33 @@ footer div {
         width: 400px;
         height: 500px;
     }
+
+    .carrusel {
+        width: 75%;
+        margin: 20px 60px;
+    }
+
+    .carrusel div img {
+        height: 470px;
+
+    }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
+    .fotosbio {
+        height: 400px;
+        margin: 0px 0px;
+    }
+
+    .info {
+        width: 100%;
+        height: 1800px;
+    }
+
+    .info p {
+        font-size: 20px;
+    }
+
     .borngrid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
@@ -1088,10 +1153,6 @@ footer div {
         flex-direction: column;
     }
 
-    .info {
-        width: 100%;
-        height: 2000px;
-    }
 
     .discos iframe {
         width: 300px;
