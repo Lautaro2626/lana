@@ -492,7 +492,7 @@ header nav ul li:hover {
 }
 
 .fotosbio img:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
     box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
     -webkit-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
     -moz-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
