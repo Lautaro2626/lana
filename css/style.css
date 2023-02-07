@@ -11,7 +11,16 @@ body {
     color: aliceblue;
     background-color: black;
 }
-
+body p::selection{
+    background-color: rgb(152, 144, 199);
+}
+body h2::selection{
+    background-color: rgb(152, 144, 199);
+    color: white;
+}
+body h3::selection{
+    background-color: rgb(152, 144, 199);
+}
 /*header*/
 header {
     width: 100%;
@@ -34,14 +43,14 @@ header h1 {
     text-align: center;
     font-family: 'Great Vibes', cursive;
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: 0.7s;
     font-weight: 100;
 }
 
 
 header h1:hover {
-    color: rgb(161, 132, 218);
-    
+    color: rgb(183, 160, 227);
+
 }
 
 header h2 {
@@ -51,16 +60,19 @@ header h2 {
     margin: 5px;
 
 }
-.dropdown-menu{
-    background-color: rgba(86, 76, 152, 0.783);;
+
+.dropdown-menu {
+    background-color: rgba(86, 76, 152, 0.783);
 }
-.dropdown-item{
-color: white;
-font-weight: bold;
+
+.dropdown-item {
+    color: white;
+    font-weight: bold;
 }
+
 header nav ul li {
     display: inline-block;
-    margin: 0px 45px 5px 0px;
+    margin: 40px 45px 5px 0px;
     transition-property: all;
     transition-duration: 0.5s;
     text-align: center;
@@ -72,7 +84,7 @@ header nav ul li:hover {
 
 .boton-transicion {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     color: rgb(86, 76, 152);
     border: 1px solid rgb(86, 76, 152);
@@ -91,16 +103,16 @@ header nav ul li:hover {
     color: white;
 }
 
-.boton-redes{
+.boton-redes {
     text-align: center;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 22px;
     color: rgb(202, 192, 217);
     margin: 60px 0px 70px 0px;
     background-color: rgba(12, 6, 25, 0.738);
     transition: 1s;
     border: 1px solid rgb(86, 76, 152);
-    padding:10px;
+    padding: 10px;
 }
 
 .boton-redes:hover {
@@ -209,7 +221,7 @@ header nav ul li:hover {
     width: 200px;
     height: 200px;
     transition-property: all;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 
 .album1 div img:hover {
@@ -262,7 +274,7 @@ header nav ul li:hover {
     width: 200px;
     height: 200px;
     transition-property: all;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 
 .album2 div img:hover {
@@ -316,7 +328,7 @@ header nav ul li:hover {
     width: 200px;
     height: 200px;
     transition-property: all;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 
 .album3 div img:hover {
@@ -369,14 +381,17 @@ header nav ul li:hover {
     height: 550px;
     object-fit: cover;
 }
-.carrusel div p{
+
+.carrusel div p {
     font-size: 15px;
     background-color: rgba(22, 4, 47, 0.482);
 }
-.carrusel div h4{
+
+.carrusel div h4 {
     font-size: 30px;
     background-color: rgba(22, 4, 47, 0.482);
 }
+
 .tour {
     margin: 30px 10px 70px 10px;
     border: 3px solid darkslateblue;
@@ -448,15 +463,15 @@ header nav ul li:hover {
     text-align: center;
     color: white;
     font-size: 27px;
-    background: rgb(11, 1, 24);
-    background: linear-gradient(90deg, rgba(11, 1, 24, 1) 0%, rgba(37, 25, 74, 1) 21%, rgba(125, 102, 159, 0.8240010997067448) 50%, rgba(37, 25, 74, 1) 81%, rgba(11, 1, 24, 1) 100%);
+    background-color: rgba(29, 7, 56, 0.642);
     margin: 10px;
 }
 
 .impo div {
     display: flex;
     align-items: center;
-    flex-direction: column;
+justify-content: center;
+margin: 20px;
 }
 
 .impo div iframe {
@@ -525,7 +540,7 @@ header nav ul li:hover {
 
 .bio p {
     font-size: 22px;
-    text-align:justify;
+    text-align: justify;
     margin: 40px;
 }
 
@@ -536,7 +551,7 @@ header nav ul li:hover {
 /*tour*/
 
 .fotos-tour p {
-    text-align: justify ;
+    text-align: justify;
     font-size: 25px;
     width: 80%;
     margin: 0px 0px 20px 0px;
@@ -652,14 +667,14 @@ header nav ul li:hover {
     text-align: center;
     justify-content: center;
     font-size: 30px;
-    
+
 }
 
 .discos h3 {
     text-align: center;
     margin: 20px;
     font-size: 30px;
-    
+
 }
 
 .discos iframe {
@@ -721,7 +736,31 @@ header nav ul li:hover {
 .contacto div {
     margin: 20px;
 }
+.contacto div input{
+    outline: none;
+    background-color: rgb(177, 170, 217);
+}
+.contacto div input:focus{
+    border: 2.5px solid rgb(49, 41, 101)
 
+}
+.contacto div select{
+    outline: none;
+    background-color: rgb(177, 170, 217);
+}
+.contacto div select:focus{
+    border: 2.5px solid rgb(49, 41, 101)
+    
+
+}
+.contacto div textarea{
+    outline: none;
+    background-color: rgb(167, 158, 227);
+}
+.contacto div textarea:focus{
+    border: 2.5px solid rgb(49, 41, 101)
+
+}
 .spoti {
     position: fixed;
     right: 30px;
@@ -952,6 +991,7 @@ footer div {
         height: 500px;
         object-fit: cover;
     }
+
     footer {
         height: 500px;
     }
@@ -961,6 +1001,7 @@ footer div {
     header {
         height: 1100px;
     }
+
     .info {
         width: 100%;
         height: 1600px;
@@ -1015,11 +1056,13 @@ footer div {
             "grid-img1 grid-video"
             "grid-img4 grid-img4";
     }
+
     .bio p {
         font-size: 20px;
         text-align: justify;
         margin: 20px;
     }
+
     .grid-img1 {
         grid-area: grid-img1;
         grid-row-start: 1;
@@ -1068,6 +1111,12 @@ footer div {
 
     .carrusel div img {
         height: 470px;
+
+    }
+    .impo div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
 
     }
 }
@@ -1158,7 +1207,9 @@ footer div {
         width: 300px;
         height: 400px;
     }
+
     footer {
         height: 600px;
     }
 }
+
