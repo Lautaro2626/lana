@@ -1,0 +1,108 @@
+/*-------HEADER--------*/
+
+header {
+    @include tamaño (100%,720px);
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+    @extend %flex;
+    
+
+    h2 {
+        text-align: center;
+        color: nth($colores,3);
+        font-size: $size;
+        margin: 5px;
+    }
+
+    h1 {
+        color: nth($colores,1);
+        font-size: 160px;
+        text-align: center;
+        font-family: 'Great Vibes', cursive;
+        @include transicion (all, 0.7s);
+        font-weight: 100;
+
+        &:hover {
+            color: rgb(183, 160, 227);
+        }
+    }
+
+    nav {
+        div {
+            ul {
+                li {
+                    display: inline-block;
+                    margin: 40px 45px 5px 0px;
+                    @include transicion (all, 0.5s);
+                    text-align: center;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+
+                .boton-transicion {
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: nth($colores,1);
+                    border: 1px solid nth($colores,1);
+                    border-radius: 5%;
+                    padding: 10px;
+                    background-color: nth($colores,2);
+                    @include transicion (all, 0.2s);
+
+
+                    &:hover {
+                        background-color: nth($colores,1);
+                        box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
+                        -webkit-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
+                        -moz-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
+                        color: white;
+                    }
+                }
+
+
+
+            }
+    
+        }
+                .dropdown-menu{
+                    background-color: rgba(86, 76, 152, 0.783);
+                }
+
+
+                .dropdown-item {
+                    color: white;
+                    font-weight: bold
+                }
+            }
+}
+
+
+
+.boton-redes {
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(202, 192, 217);
+    margin: 60px 0px 70px 0px;
+    background-color: nth($colores,2);
+    @include transicion (all, 0.8s);
+    border: 1px solid nth($colores,1);
+    padding: 10px;
+
+
+    &:hover {
+        transform: scale(1.1);
+        color: nth($colores,3);
+        background-color: nth($colores,1);
+        box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
+        -webkit-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
+        -moz-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
+    }
+}

@@ -1,0 +1,32 @@
+/*----VARIABLES----*/
+$size: 28px;
+/*----LISTA-----*/
+$colores:
+rgb(103, 93, 171),
+rgba(12, 6, 25, 0.738), 
+white,
+black;
+
+/*----EXTENDES-------*/
+%flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+%flex2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----MIXINS-----*/
+
+@mixin transicion ($property, $duration){
+    transition-property: $property;
+    transition-duration: $duration;
+}
+
+@mixin tamaño($width, $height){
+    width: $width;
+    height: $height;
+}

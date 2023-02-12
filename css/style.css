@@ -6,7 +6,7 @@ animate.css * {
     box-sizing: border-box;
 }
 
-/*body*/
+/*-------------BODY----------------*/
 body {
     color: aliceblue;
     background-color: black;
@@ -21,7 +21,7 @@ body h2::selection{
 body h3::selection{
     background-color: rgb(152, 144, 199);
 }
-/*header*/
+/*-------------------------HEADER-------------*/
 header {
     width: 100%;
     height: 720px;
@@ -124,7 +124,7 @@ header nav ul li:hover {
     -moz-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
 }
 
-/*MAIN*/
+/*---------------------MAIN---------------*/
 /*inicio*/
 .fondo-inicio {
     background-image: url(../img/flores3.jpeg);
@@ -392,65 +392,6 @@ header nav ul li:hover {
     background-color: rgba(22, 4, 47, 0.482);
 }
 
-.tour {
-    margin: 30px 10px 70px 10px;
-    border: 3px solid darkslateblue;
-}
-
-.tour div {
-    position: relative;
-    display: inline-block;
-    margin: 10px 10px 10px 10px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-
-.tour1 div img {
-    width: 260px;
-    height: 260px;
-    transition-property: all;
-    transition-duration: 0.5s;
-}
-
-.tour1 div img:hover {
-    box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
-    -webkit-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
-    -moz-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
-}
-
-.tour1 div h3 {
-    position: absolute;
-    right: 20px;
-    left: 20px;
-    background-color: black;
-    text-align: center;
-    font-size: 25px;
-}
-
-.tour2 div img {
-    width: 280px;
-    height: 280px;
-    transition-property: all;
-    transition-duration: 0.5s;
-}
-
-.tour2 div img:hover {
-    box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
-    -webkit-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
-    -moz-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
-}
-
-.tour2 div h3 {
-    position: absolute;
-    right: 20px;
-    left: 20px;
-    background-color: black;
-    text-align: center;
-    font-size: 25px;
-}
 
 .impo h2 {
     text-align: center;
@@ -485,7 +426,7 @@ margin: 20px;
     -moz-box-shadow: -2px 3px 43px -17px rgba(252, 250, 250, 1);
 }
 
-/*biografia*/
+/*--------------BIOGRAFIA----------------*/
 
 .fondo {
     background-color: black;
@@ -548,7 +489,7 @@ margin: 20px;
     width: 700px;
 }
 
-/*tour*/
+/*----------------TOUR-------*/
 
 .fotos-tour p {
     text-align: justify;

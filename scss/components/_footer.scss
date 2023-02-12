@@ -1,0 +1,25 @@
+/*----------------FOOTER-----------*/
+footer {
+    background-color: black;
+    width: 98%;
+    height: 400px;
+    margin: 0px 0px 10px 0px;
+    border: 5px solid darkslateblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+div{
+    text-align: center;
+    p{
+    color: rgb(99, 88, 168);
+    text-align: center;
+    font-size: 25px;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+        margin: 20px;
+    }
+}
+}
