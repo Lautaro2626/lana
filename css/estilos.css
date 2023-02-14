@@ -84,12 +84,13 @@ header {
     font-family: 'Great Vibes', cursive;
     transition-property: all;
     transition-duration: 0.7s;
-    font-weight: 100; }
+    font-weight: 100;
+    margin: 0px,0px,30px,0px; }
     header h1:hover {
       color: #b7a0e3; }
   header nav div ul li {
     display: inline-block;
-    margin: 30px 45px 5px 0px;
+    margin: 0px 45px 0px 0px;
     transition-property: all;
     transition-duration: 0.5s;
     text-align: center; }
@@ -118,7 +119,10 @@ header {
   header nav .dropdown-item {
     color: white;
     font-weight: bold;
-    margin: 0px; }
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
 
 .boton-redes {
   text-align: center;

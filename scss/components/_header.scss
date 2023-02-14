@@ -25,7 +25,7 @@ header {
         font-family: 'Great Vibes', cursive;
         @include transicion (all, 0.7s);
         font-weight: 100;
-
+margin: 0px,0px,30px,0px;
         &:hover {
             color: rgb(183, 160, 227);
         }
@@ -36,7 +36,7 @@ header {
             ul {
                 li {
                     display: inline-block;
-                    margin: 30px 45px 5px 0px;
+                    margin: 0px 45px 0px 0px;
                     @include transicion (all, 0.5s);
                     text-align: center;
 
@@ -81,6 +81,9 @@ header {
                     color: white;
                     font-weight: bold;
                     margin: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
                 }
             }
 }
