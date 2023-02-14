@@ -36,7 +36,7 @@ header {
             ul {
                 li {
                     display: inline-block;
-                    margin: 40px 45px 5px 0px;
+                    margin: 30px 45px 5px 0px;
                     @include transicion (all, 0.5s);
                     text-align: center;
 
@@ -73,12 +73,14 @@ header {
         }
                 .dropdown-menu{
                     background-color: rgba(86, 76, 152, 0.783);
+                    margin: 0px;
                 }
 
 
                 .dropdown-item {
                     color: white;
-                    font-weight: bold
+                    font-weight: bold;
+                    margin: 0px;
                 }
             }
 }

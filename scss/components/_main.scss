@@ -9,7 +9,7 @@
     flex-wrap: wrap;
 
     img {
-        @include tamaño (150px,150px);
+        @include tamaño (150px, 150px);
         margin: 10px 0px;
         @include transicion (all, 0.5s);
 
@@ -26,11 +26,11 @@
 .info {
     @extend %flex;
     align-items: center;
-    @include tamaño (100%,720px);
+    @include tamaño (100%, 720px);
 
     .info-fotos {
         img {
-            @include tamaño (270px,270px);
+            @include tamaño (270px, 270px);
             border: 7px solid nth($colores, 4);
             margin: 10px;
             @include transicion (all, 0.5s);
@@ -46,7 +46,7 @@
 }
 
 p {
-    font-size: $size;
+    font-size: 22px;
     text-align: center;
     color: nth($colores, 3);
     background-color: nth($colores, 2);
@@ -77,7 +77,7 @@ p {
 
 
 .cancionnueva {
-    @include tamaño (100%,550px);
+    @include tamaño (100%, 550px);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -91,7 +91,7 @@ p {
     }
 
     iframe {
-        @include tamaño (500px,400px);
+        @include tamaño (500px, 400px);
     }
 }
 
@@ -104,13 +104,13 @@ p {
 
     div {
         border: 5px solid nth($colores, 1);
-        @include tamaño (250px,55vh);
+        @include tamaño (250px, 55vh);
         margin: 20px;
         padding: 2px;
         flex-direction: column;
         @extend %flex;
         background-color: nth($colores, 4);
-        @include transicion(all,0.2s);
+        @include transicion(all, 0.2s);
 
         &:hover {
             box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
@@ -136,7 +136,7 @@ p {
         }
 
         img {
-            @include tamaño (200px,200px);
+            @include tamaño (200px, 200px);
             @include transicion (all, 0.2s);
 
             &:hover {
@@ -153,7 +153,7 @@ p {
 
     div {
         border: 5px solid nth($colores, 1);
-        @include tamaño (250px,55vh);
+        @include tamaño (250px, 55vh);
         margin: 20px;
         padding: 5px;
         @extend %flex;
@@ -185,7 +185,7 @@ p {
         }
 
         img {
-            @include tamaño (200px,200px);
+            @include tamaño (200px, 200px);
             @include transicion (all, 0.2s);
 
             &:hover {
@@ -202,7 +202,8 @@ p {
 
     div {
         border: 5px solid nth($colores, 1);
-        @include tamaño (250px,65vh);;
+        @include tamaño (250px, 65vh);
+        ;
         margin: 20px;
         padding: 5px;
         @extend %flex;
@@ -234,7 +235,7 @@ p {
         }
 
         img {
-            @include tamaño (200px,200px);
+            @include tamaño (200px, 200px);
             @include transicion (all, 0.2s);
 
             &:hover {
@@ -336,7 +337,7 @@ p {
         @extend %flex2;
 
         img {
-            @include tamaño (200px,200px);
+            @include tamaño (200px, 200px);
             margin: 10px 60px 10px 60px;
         }
     }
@@ -357,7 +358,7 @@ p {
 .fotos-tour {
     @extend %flex2;
     flex-direction: column;
-    margin: 0px;
+    margin: 10px;
 
     h2 {
         text-align: center;
@@ -393,12 +394,12 @@ p {
     grid-auto-rows: 180px;
     grid-template-areas:
         "grid-img1 grid-img2 grid-img3"
-        "grid-img1 grid-video grid-video"
+        "grid-img1 grid-img2 grid-video"
         "grid-img1 grid-img4 grid-img4";
 
     div {
         img {
-            @include tamaño (100%,100%);
+            @include tamaño (100%, 100%);
             object-fit: cover;
             box-shadow: 2px 2px 22px 5px rgba(25, 3, 69, 1);
             -webkit-box-shadow: 2px 2px 22px 5px rgba(25, 3, 69, 1);
@@ -407,13 +408,6 @@ p {
     }
 }
 
-.grid-video {
-    iframe {
-        box-shadow: 2px 2px 22px 5px rgba(25, 3, 69, 1);
-        -webkit-box-shadow: 2px 2px 22px 5px rgba(25, 3, 69, 1);
-        -moz-box-shadow: 2px 2px 22px 5px rgba(25, 3, 69, 1);
-    }
-}
 
 .grid-img1 {
     grid-area: grid-img1;
@@ -432,13 +426,17 @@ p {
 }
 
 .grid-video {
-    grid-area: grid-video;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    background-color: rgb(0, 0, 0);
-    width: 100%;
+    iframe {
+        grid-area: grid-video;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background-color: rgb(0, 0, 0);
+        box-shadow: 2px 2px 22px 5px rgba(25, 3, 69, 1);
+        -webkit-box-shadow: 2px 2px 22px 5px rgba(25, 3, 69, 1);
+        -moz-box-shadow: 2px 2px 22px 5px rgba(25, 3, 69, 1);
+    }
 }
 
 .grid-img3 {
@@ -496,14 +494,16 @@ iframe {
     img {
         width: 200px;
         margin: 5px;
-        @include transicion (all, 0.5s);
+        @include transicion (all, 0.2s);
 
         &:hover {
-            transform: scale(0.5);
+            transform: scale(1.1);
             box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
             -webkit-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
             -moz-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
         }
+
+
 
     }
 }
