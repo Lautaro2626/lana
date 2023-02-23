@@ -240,16 +240,18 @@
         height: 1100px;
 
         nav {
-            div{
-            ul {
-                li {
-                    display: flex;
-                    flex-direction: column;
-                    margin: 30px 100px;
+            div {
+                div {
+                    ul {
+                        
+                            display: flex;
+                            flex-direction: column;
+                            margin: 0px ;
+                        
+                    }
                 }
             }
         }
-    }
     }
 
     .info {
@@ -389,122 +391,123 @@
 
         }
     }
-    .fotos-tour{
+
+    .fotos-tour {
         p {
-            font-size: 15px;        
-    }
-
-}
-
-@media screen and (max-width: 450px) {
-    .fotosbio {
-        height: 400px;
-        margin: 0px 0px;
-    }
-
-    .info {
-        width: 100%;
-        height: 1800px;
-
-        p {
-            font-size: 20px;
+            font-size: 15px;
         }
+
     }
 
-    .borngrid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "grid-img3 grid-img3"
-            "grid-video grid-video"
-            "grid-img4 grid-img4";
-    }
+    @media screen and (max-width: 450px) {
+        .fotosbio {
+            height: 400px;
+            margin: 0px 0px;
+        }
 
-    .grid-img3 {
-        grid-area: grid-img3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
+        .info {
+            width: 100%;
+            height: 1800px;
 
-    .grid-img4 {
-        grid-area: grid-img4;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-
-    .grid-video {
-        grid-area: grid-video;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-
-    .impo {
-        div {
-            iframe {
-                width: 70%;
+            p {
+                font-size: 20px;
             }
         }
-    }
 
-    header {
-        h1 {
-            font-size: 90px;
+        .borngrid {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+                "grid-img3 grid-img3"
+                "grid-video grid-video"
+                "grid-img4 grid-img4";
+        }
 
-            nav {
-                ul {
-                    li {
-                        display: flex;
-                        flex-direction: column;
-                        margin: 30px 100px;
+        .grid-img3 {
+            grid-area: grid-img3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
 
-                        a {
-                            font-size: 15px;
+        .grid-img4 {
+            grid-area: grid-img4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .grid-video {
+            grid-area: grid-video;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .impo {
+            div {
+                iframe {
+                    width: 70%;
+                }
+            }
+        }
+
+        header {
+            h1 {
+                font-size: 90px;
+
+                nav {
+                    ul {
+                        li {
+                            display: flex;
+                            flex-direction: column;
+                            margin: 30px 100px;
+
+                            a {
+                                font-size: 15px;
+                            }
                         }
                     }
                 }
             }
         }
-    }
 
 
-    .bio {
-        img {
-            width: 350px;
+        .bio {
+            img {
+                width: 350px;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    width: 110px;
+                    height: 110px;
+                    margin: 5px 6px 5px 6px;
+                }
+            }
+
         }
 
-        div {
-            display: flex;
-            flex-direction: column;
 
-            img {
-                width: 110px;
-                height: 110px;
-                margin: 5px 6px 5px 6px;
+        .discos {
+            iframe {
+                width: 300px;
+                height: 400px;
             }
         }
 
+
     }
 
-
-    .discos {
-        iframe {
-            width: 300px;
-            height: 400px;
+    @media screen and (max-width: 390px) {
+        footer {
+            height: 700px;
         }
+
     }
-
-
-}
-
-@media screen and (max-width: 390px) {
-    footer {
-        height: 700px;
-    }
-
-}
 }
