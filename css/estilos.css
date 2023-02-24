@@ -65,7 +65,7 @@ body a::selection {
 /*-------HEADER--------*/
 header {
   width: 100%;
-  height: 720px;
+  height: 650px;
   background-image: url(../img/fondo.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -79,35 +79,35 @@ header {
     margin: 5px; }
   header h1 {
     color: #675dab;
-    font-size: 160px;
+    font-size: 150px;
     text-align: center;
     font-family: 'Great Vibes', cursive;
     transition-property: all;
     transition-duration: 0.7s;
     font-weight: 100;
-    margin: 0px,0px,30px,0px; }
+    margin: 0px, 0px, 30px, 0px; }
     header h1:hover {
       color: #b7a0e3; }
   header nav div ul li {
     display: inline-block;
-    margin: 0px 45px 0px 0px;
+    margin: 0px 30px 0px 0px;
     transition-property: all;
     transition-duration: 0.5s;
     text-align: center; }
     header nav div ul li:hover {
       transform: scale(1.1); }
-  header nav div ul .boton-transicion {
+  header nav .boton-transicion {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #675dab;
     border: 1px solid #675dab;
     border-radius: 5%;
-    padding: 10px;
+    padding: 5px;
     background-color: rgba(12, 6, 25, 0.738);
     transition-property: all;
     transition-duration: 0.2s; }
-    header nav div ul .boton-transicion:hover {
+    header nav .boton-transicion:hover {
       background-color: #675dab;
       box-shadow: -2px 3px 43px -13px white;
       -webkit-box-shadow: -2px 3px 43px -13px white;
@@ -129,12 +129,12 @@ header {
   text-decoration: none;
   font-size: 22px;
   color: #cac0d9;
-  margin: 60px 0px 70px 0px;
+  margin: 50px 0px 70px 0px;
   background-color: rgba(12, 6, 25, 0.738);
   transition-property: all;
   transition-duration: 0.8s;
   border: 1px solid #675dab;
-  padding: 10px; }
+  padding: 6px; }
   .boton-redes:hover {
     transform: scale(1.1);
     color: white;
@@ -330,11 +330,11 @@ p {
       transform: scale(1.1); }
 
 .carrusel {
-  width: 80%;
-  margin: 20px 120px; }
+  width: 68%;
+  margin: 20px 200px; }
 
 .carousel-item a img {
-  height: 550px;
+  height: 470px;
   object-fit: cover; }
 
 .carousel-caption p {
@@ -444,6 +444,7 @@ p {
   grid-column-end: 3; }
 
 .grid-video iframe {
+  width: 100%;
   grid-area: grid-video;
   grid-row-start: 2;
   grid-row-end: 3;
@@ -452,7 +453,10 @@ p {
   background-color: black;
   box-shadow: 2px 2px 22px 5px #190345;
   -webkit-box-shadow: 2px 2px 22px 5px #190345;
-  -moz-box-shadow: 2px 2px 22px 5px #190345; }
+  -moz-box-shadow: 2px 2px 22px 5px #190345;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .grid-img3 {
   grid-area: grid-img3;
@@ -564,12 +568,16 @@ footer {
 @media screen and (max-width: 1050px) {
   .fotosbio img {
     width: 120px;
-    height: 120px; } }
+    height: 120px; }
+  .carrusel {
+    margin: 20px 180px; } }
 
 @media screen and (max-width: 935px) {
   header h1 {
-    font-size: 120px;
+    font-size: 130px;
     margin: 50px; }
+  .carrusel {
+    margin: 20px 160px; }
   .info {
     display: flex;
     align-items: center;
@@ -577,17 +585,20 @@ footer {
     width: 100%;
     height: 950px; }
   .album1 div {
-    height: 70vh; }
+    height: 70vh;
+    margin: 10px; }
     .album1 div img {
       width: 210px;
       height: 210px; }
   .album2 div {
-    height: 70vh; }
+    height: 70vh;
+    margin: 10px; }
     .album2 div img {
       width: 210px;
       height: 210px; }
   .album3 div {
-    height: 72vh; }
+    height: 80vh;
+    margin: 10px; }
     .album3 div img {
       width: 210px;
       height: 210px; }
@@ -596,19 +607,30 @@ footer {
     height: 180px;
     margin: 10px 15px 10px 15px; } }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 807px) {
   header {
-    height: 670px; }
+    width: 100%;
+    height: 650px; }
     header h1 {
-      font-size: 130px;
+      font-size: 110px;
       margin: 5px; }
     header h2 {
-      font-size: 30px; }
+      font-size: 20px; }
+    header nav div ul li {
+      display: flex;
+      flex-direction: column;
+      margin: 15px; }
+  .boton-transicion {
+    font-size: 13px;
+    padding: 7px; }
+  .boton-redes {
+    margin: 10px 0px 20px 0px;
+    font-size: 18px; }
   .info {
     width: 100%;
     height: 1100px; }
   .album {
-    height: 4800px; }
+    height: 4100px; }
   .album1 {
     display: flex;
     justify-content: center;
@@ -616,7 +638,7 @@ footer {
     align-items: center; }
     .album1 div {
       width: 300px;
-      height: 85vh; }
+      height: 68vh; }
       .album1 div h3 {
         font-size: 55px; }
       .album1 div a {
@@ -628,7 +650,7 @@ footer {
     align-items: center; }
     .album2 div {
       width: 300px;
-      height: 80vh; }
+      height: 74vh; }
       .album2 div h3 {
         font-size: 55px; }
       .album2 div div a {
@@ -673,8 +695,8 @@ footer {
     width: 150px;
     margin: 5px; }
   .carrusel {
-    width: 60%;
-    margin: 20px 120px; }
+    width: 75%;
+    margin: 20px 110px; }
     .carrusel div img {
       height: 500px;
       object-fit: cover; }
@@ -682,20 +704,14 @@ footer {
     height: 500px; } }
 
 @media screen and (max-width: 675px) {
-  header {
-    height: 1100px; }
-    header nav div ul li {
-      display: flex;
-      flex-direction: column;
-      margin: 30px 100px; }
   .info {
     width: 100%;
-    height: 1600px; }
+    height: 1000px; }
     .info p {
-      font-size: 23px; }
-  .info-fotos {
-    display: flex;
-    flex-direction: column; }
+      font-size: 20px; }
+    .info .info-fotos img {
+      width: 220px;
+      height: 220px; }
   .bio div img {
     width: 130px;
     height: 130px;
@@ -709,12 +725,41 @@ footer {
     display: flex;
     flex-direction: column; }
   .discos iframe {
-    width: 85%; } }
-
-@media screen and (max-width: 550px) {
+    width: 85%; }
   .fotosbio {
-    height: 350px;
-    margin: 0px 0px; }
+    display: none; }
+  .carrusel {
+    width: 75%;
+    margin: 20px 95px; } }
+
+@media screen and (max-width: 608px) {
+  header {
+    width: 100%;
+    height: 620px; }
+    header h1 {
+      font-size: 100px;
+      margin: 5px; }
+    header h2 {
+      font-size: 18px; }
+    header nav div ul li {
+      margin: 10px; } }
+
+@media screen and (max-width: 553px) {
+  header {
+    width: 100%;
+    height: 630px; }
+    header h1 {
+      font-size: 90px;
+      margin: 5px; }
+    header h2 {
+      font-size: 16px; }
+    header nav div ul li {
+      margin: 8px; }
+  .info .info-fotos {
+    display: flex; }
+    .info .info-fotos img {
+      width: 180px;
+      height: 180px; }
   .borngrid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "grid-img1 grid-img3" "grid-img1 grid-video" "grid-img4 grid-img4"; }
@@ -728,6 +773,8 @@ footer {
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2; }
+  .grid-img2 {
+    display: none; }
   .grid-img3 {
     grid-area: grid-img3;
     grid-row-start: 1;
@@ -746,8 +793,6 @@ footer {
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3; }
-  header h1 {
-    font-size: 110px; }
   .discos iframe {
     width: 400px;
     height: 500px; }
@@ -763,18 +808,12 @@ footer {
   .fotos-tour p {
     font-size: 15px; } }
 
-@media screen and (max-width: 550px) and (max-width: 450px) {
-  .fotosbio {
-    height: 400px;
-    margin: 0px 0px; }
-  .info {
-    width: 100%;
-    height: 1800px; }
-    .info p {
-      font-size: 20px; }
+@media screen and (max-width: 553px) and (max-width: 450px) {
   .borngrid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "grid-img3 grid-img3" "grid-video grid-video" "grid-img4 grid-img4"; }
+  .grid-img1 {
+    display: none; }
   .grid-img3 {
     grid-area: grid-img3;
     grid-row-start: 1;
@@ -795,14 +834,6 @@ footer {
     grid-column-end: 3; }
   .impo div iframe {
     width: 70%; }
-  header h1 {
-    font-size: 90px; }
-    header h1 nav ul li {
-      display: flex;
-      flex-direction: column;
-      margin: 30px 100px; }
-      header h1 nav ul li a {
-        font-size: 15px; }
   .bio img {
     width: 350px; }
   .bio div {
@@ -816,6 +847,13 @@ footer {
     width: 300px;
     height: 400px; } }
 
-@media screen and (max-width: 550px) and (max-width: 390px) {
+@media screen and (max-width: 390px) {
   footer {
-    height: 700px; } }
+    height: 700px; }
+  .info {
+    height: 1200px; }
+    .info .info-fotos {
+      display: flex; }
+      .info .info-fotos img {
+        width: 160px;
+        height: 160px; } }

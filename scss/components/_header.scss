@@ -1,7 +1,7 @@
 /*-------HEADER--------*/
 
 header {
-    @include tamaño (100%, 720px);
+    @include tamaño (100%, 650px);
     background-image: url(../img/fondo.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ header {
 
     h1 {
         color: nth($colores, 1);
-        font-size: 160px;
+        font-size: 150px;
         text-align: center;
         font-family: 'Great Vibes', cursive;
         @include transicion (all, 0.7s);
@@ -34,10 +34,10 @@ header {
 
     nav {
         div {
-            div {
-                ul {
+            ul {
+                li {
                     display: inline-block;
-                    margin: 0px 45px 0px 0px;
+                    margin: 0px 30px 0px 0px;
                     @include transicion (all, 0.5s);
                     text-align: center;
 
@@ -47,41 +47,45 @@ header {
                 }
             }
         }
+
+        .boton-transicion {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: nth($colores, 1);
+            border: 1px solid nth($colores, 1);
+            border-radius: 5%;
+            padding: 5px;
+            background-color: nth($colores, 2);
+            @include transicion (all, 0.2s);
+
+
+            &:hover {
+                background-color: nth($colores, 1);
+                box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
+                -webkit-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
+                -moz-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
+                color: white;
+            }
+        }
+
+        .dropdown-menu {
+            background-color: rgba(86, 76, 152, 0.783);
+            margin: 0px;
+        }
+
+
+        .dropdown-item {
+            color: white;
+            font-weight: bold;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
     }
 }
 
-.boton-transicion {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    color: nth($colores, 1);
-    border: 1px solid nth($colores, 1);
-    border-radius: 5%;
-    padding: 10px;
-    background-color: nth($colores, 2);
-    @include transicion (all, 0.2s);
-
-
-    &:hover {
-        background-color: nth($colores, 1);
-        box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
-        -webkit-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
-        -moz-box-shadow: -2px 3px 43px -13px rgba(255, 255, 255, 1);
-        color: white;
-    }
-}
-
-.dropdown-menu {
-    background-color: rgba(86, 76, 152, 0.783);
-    margin: 0px;
-}
-
-
-.dropdown-item {
-    color: white;
-    font-weight: bold;
-    margin: 0px;
-}
 
 
 .boton-redes {
@@ -89,11 +93,11 @@ header {
     text-decoration: none;
     font-size: 22px;
     color: rgb(202, 192, 217);
-    margin: 60px 0px 70px 0px;
+    margin: 50px 0px 70px 0px;
     background-color: nth($colores, 2);
     @include transicion (all, 0.8s);
     border: 1px solid nth($colores, 1);
-    padding: 10px;
+    padding: 6px;
 
 
     &:hover {

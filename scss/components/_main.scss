@@ -203,7 +203,7 @@ p {
     div {
         border: 5px solid nth($colores, 1);
         @include tamaño (250px, 65vh);
-        ;
+        
         margin: 20px;
         padding: 5px;
         @extend %flex;
@@ -249,15 +249,15 @@ p {
 
 
 .carrusel {
-    width: 80%;
-    margin: 20px 120px;
+    width: 68%;
+    margin: 20px 200px;
 }
 
 .carousel-item {
 
     a {
         img {
-            height: 550px;
+            height: 470px;
             object-fit: cover;
         }
 
@@ -427,6 +427,7 @@ p {
 
 .grid-video {
     iframe {
+        width: 100%; 
         grid-area: grid-video;
         grid-row-start: 2;
         grid-row-end: 3;
@@ -436,6 +437,9 @@ p {
         box-shadow: 2px 2px 22px 5px rgba(25, 3, 69, 1);
         -webkit-box-shadow: 2px 2px 22px 5px rgba(25, 3, 69, 1);
         -moz-box-shadow: 2px 2px 22px 5px rgba(25, 3, 69, 1);
+        display: flex;
+            align-items: center;
+            justify-content: center;
     }
 }
 
